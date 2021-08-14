@@ -3,12 +3,19 @@ import Products from "./components/Products";
 import "./App.css";
 import Sidebar from "./components/Sidebar";
 
+const listOfProducts = [
+  { name: "bodywash", price: 200 },
+  { name: "facewash", price: 600 },
+  { name: "bodybutter", price: 400 },
+];
+
 function App() {
   return (
     <div className="App">
       <Navbar />
       <div className="container">
-        <Products />
+        <Products products={listOfProducts} />
+
         <Sidebar />
       </div>
       <div className="footer">
