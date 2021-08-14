@@ -1,0 +1,199 @@
+
+.App {
+  text-align: center;
+}
+
+.navbar
+{
+
+height:50px;
+background-color: rgba(128,21,21,0.5);
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+border: 2px solid black;
+position: relative;
+}
+
+
+
+.logo{
+
+  padding:10px;
+  font-style: bold;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.logo:hover{
+  font-size:22px;
+  color:peru;
+  font-weight: 800;
+}
+
+.search{
+  width: 800px;
+  padding:5px;
+}
+
+#input1{
+width: 550px;
+height: 30px;
+border: 3px solid black;
+margin-right: 10px;
+position: relative;
+}
+
+
+.services{
+  padding:10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+
+.btn {
+  width: 150px;
+  height: 35px;
+  margin-right: 10px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position:relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.btn:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.btn:active {
+  color: #000
+}
+
+.btn:active:after {
+  background: transparent;
+}
+
+.btn:hover:before {
+  opacity: 1;
+}
+
+.btn:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+
+.container{
+  background-color: plum;
+  display: flex;
+  flex-direction: row;
+  height:calc(100vh - 100px);
+  justify-content: space-between;
+}
+
+.products{
+  background-color:#FFAAAA;
+  flex:3;
+  border: 2px solid black;
+}
+
+.sidebar{
+  background-color: rgb(255, 170, 170);
+  flex:1;
+  border: 2px solid black;
+}
+
+.items input{
+width: 280px;
+border: 3px solid black;
+margin-top: 30px;
+margin-right:10px;
+}
+
+.footer{
+  background-color: rosybrown;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-item{
+  height: 250px;
+  width: 350px;
+  background-color: brown;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-top:20px;
+  margin-left: 20px; 
+  }
+
+  .product-img {
+
+    height: 200px;
+    width: 300px;
+    background-color:  rosybrown;
+    border: 2px solid black;
+    border-radius: 5px;
+  }
+
+.label {
+font-size: 1em;
+margin-top:6px;
+
+  }
+
+label{
+  margin-right: 80px;
+  color: beige;
+  font-weight: bold;
+}  
+
+#prodbtn{
+  font-size: 1em;
+  font-weight: bold;
+  border:1px solid black;
+  border-radius: 2px; 
+
+}
+
+#prodbtn:hover{
+  background-color:maroon;
+  color:beige;
+  font-weight: bold;
+}
